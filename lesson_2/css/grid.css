@@ -1,0 +1,27 @@
+@import url("reset.css");.chek {
+}
+.check__title {
+}
+.check__wrapper {
+    max-width: 1200px;
+    margin: 100px auto;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.check__item-header {
+    grid-column: span 4;
+    text-align: center;
+    background-color: rgb(193, 13, 67);
+}
+
+.check__item {
+    border-bottom: 1px solid #05f815;
+}
+
+.check__item-total{
+    grid-column-start: span 2;
+    background-color: aquamarine;
+}

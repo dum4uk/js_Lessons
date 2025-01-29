@@ -134,8 +134,32 @@ footer {
     font-weight: 700;
     line-height: 1.5;
 }
-.task__img {
-}
+
 .task__text {
     font-size: 20px;
+}
+
+span,
+p span,
+table {
+    font-size: 24px;
+    font-weight: 700;
+    color: aquamarine;
+}
+
+
+
+table {
+    margin-block-start: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
 }
