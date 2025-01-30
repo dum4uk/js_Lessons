@@ -163,3 +163,62 @@ td {
     border: 2px solid black;
     text-align: center;
 }
+
+/* Task_6 */
+
+.check {
+    width: 500px;
+    background-color: white;
+    border: none;
+}
+
+.check * {
+    border: none;
+    color: black;
+    vertical-align: middle;
+}
+
+.check__title {
+    text-align: center;
+    font-size: 22px;
+    font-family: 700px;
+}
+
+.check__subtitle {
+    border-bottom: 2px black dotted;
+}
+
+.check__subtitle td {
+    vertical-align: top;
+}
+
+.check__subtitle td,
+.check__sum td,
+.check__wish td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+.check__item td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.check__item td:first-child {
+    text-align: left;
+} 
+
+.check__sum {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.check__sum--right {
+    text-align: right;
+}
+.check__wish {
+    text-align: center;
+}
