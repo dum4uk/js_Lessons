@@ -55,7 +55,7 @@ document.write(`
             <td class="check__sum--right" colspan="2">${totalPrice.toFixed(2)}</td>
         </tr>
         <tr class="check__wish">
-            <td colspan="4">Дякуєммо затпокупку!</td>
+            <td colspan="4">Дякуємо за покупку!</td>
         </tr>
         <tr class="check__wish">
             <td colspan="4">Гарного дня!</td>
