@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900&display=swap");
+@import url("reset.css");
+
+/* _____Загальні стилі_____ */
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    background-color: rgb(40, 41, 62);
+    color: rgb(255, 255, 255);
+}
+
+.none {
+    display: none;
+}
+
+.wrapper {
+    padding-block-start: 30px;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    row-gap: 50px;
+    flex-direction: column;
+}
+
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+header {
+    align-self: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+main {
+    flex-grow: 1;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    padding: 15px;
+    flex: 1 1 270px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all .3s ease-in;
+}
+
+.card *:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 2px 0px rgba(206, 194, 186, 0.7),
+            1px 2px 4px 0px rgba(206, 194, 186, 0.7),
+            2px 4px 8px 0px rgba(206, 194, 186, 0.7),
+            2px 4px 16px 0px rgba(206, 194, 186, 0.7);
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.section-btn {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(8, 239, 243);
+    padding-inline: 15px;
+    font-size: 22px;
+    border-radius: 6px;
+    color: brown;
+    transition: all .5s ease-in;
+} 
+
+.section-btn a {
+    position: relative;
+    z-index: 2;
+}
+
+.section-btn:hover {
+    color: black;
+}
+
+.section-btn::after{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(40, 41, 62);
+    border-radius: 6px;
+    transition: all .5s ease-in;
+}
+
+
+.section-btn:hover::after {
+    width: 100%;
+}
+
+footer {
+    align-self: center;
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+
+.task *{
+    margin-block-end: 20px;
+}
+.task__title {
+    
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.task__text {
+    font-size: 20px;
+}
+
+span,
+p span,
+table {
+    font-size: 24px;
+    font-weight: 700;
+    color: aquamarine;
+}
+
+
+
+table {
+    margin-block-start: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Task_6 */
+
+.check {
+    width: 500px;
+    background-color: white;
+    border: none;
+}
+
+.check * {
+    border: none;
+    color: black;
+    vertical-align: middle;
+}
+
+.check__title {
+    text-align: center;
+    font-size: 22px;
+    font-family: 700px;
+}
+
+.check__subtitle {
+    border-bottom: 2px black dotted;
+}
+
+.check__subtitle td {
+    vertical-align: top;
+}
+
+.check__subtitle td,
+.check__sum td,
+.check__wish td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+.check__item td {
+    padding: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+.check__item td:first-child {
+    text-align: left;
+} 
+
+.check__sum {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.check__sum--right {
+    text-align: right;
+}
+.check__wish {
+    text-align: center;
+}
