@@ -36,7 +36,7 @@ switch (numMonth) {
         result = `Осінь.`
         break;
     default:
-        result = `Нажаль, ви ввели некоректний номер тиждня.`
+        result = `Нажаль, ви ввели некоректний номер місяця.`
         break;
 }
 
