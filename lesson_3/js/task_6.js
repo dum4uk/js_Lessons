@@ -1,63 +1,46 @@
-"use strick"
+"use strict"
+
+
+// Позначення
+
+// Номер дня тижня - numWeekDay
 
 // Введення даних
 
-const quantityOfGoods1 = parseFloat(prompt('Хліб кількість','1'))
-const productPrice1 = parseFloat(prompt('Хліб ціна','1'))
-const quantityOfGoods2 = parseFloat(prompt('Молоко кількість','1'))
-const productPrice2 = parseFloat(prompt('Молоко ціна','1'))
-const quantityOfGoods3 = parseFloat(prompt('Сіль кількість','1'))
-const productPrice3 = parseFloat(prompt('Сіль ціна', '1'))
+const numWeekDay = parseInt(prompt(`Введить номер дня тижня (від 1 до 7)`, '1'))
+
 
 // Обчислення результатів
 
-const totalProductPrice1 = quantityOfGoods1 * productPrice1
-const totalProductPrice2 = quantityOfGoods2 * productPrice2
-const totalProductPrice3 = quantityOfGoods3 * productPrice3
-const totalPrice = totalProductPrice1 + totalProductPrice2 + totalProductPrice3
+let result
+
+switch (numWeekDay) {
+    case 1:
+        result = `Понеділок.`
+        break;
+    case 2:
+        result = `Вівторок.`
+        break;
+    case 3:
+        result = `Середа.`
+        break;
+    case 4:
+        result = `Четвер.`
+        break;
+    case 5:
+        result = `П'ятниця.`
+        break;
+    case 6:
+        result = `Субота.`
+        break;
+    case 7:
+        result = `Неділя.`
+        break;
+    default:
+        result = `Нажаль, ви ввели некоректний номер тиждня.`
+        break;
+}
 
 // Виведення результатів
 
-document.write(`
-    <table class="check">
-        <tr class="check__title">
-            <td colspan="4">Крамниця</td>
-        </tr>
-        <tr class="check__subtitle">
-            <td colspan="4">Чек №01</td>
-        </tr>
-        <tr class="check__subtitle">
-            <td>Товар</td>
-            <td>Кількість</td>
-            <td>Ціна за одиницю, грн</td>
-            <td>Загальна вартість, грн</td>
-        </tr>
-        <tr class="check__item">
-            <td>Хліб</td>
-            <td>${quantityOfGoods1}</td>
-            <td>${productPrice1}</td>
-            <td>${totalProductPrice1.toFixed(2)}</td>
-        </tr>
-        <tr class="check__item">
-            <td>Молоко</td>
-            <td>${quantityOfGoods2}</td>
-            <td>${productPrice2}</td>
-            <td>${totalProductPrice2.toFixed(2)}</td>
-        </tr>
-        <tr class="check__item">
-            <td>Сіль</td>
-            <td>${quantityOfGoods3}</td>
-            <td>${productPrice3}</td>
-            <td>${totalProductPrice3.toFixed(2)}</td>
-        </tr>
-        <tr class="check__sum">
-            <td colspan="2">Загальна сума, грн</td>
-            <td class="check__sum--right" colspan="2">${totalPrice.toFixed(2)}</td>
-        </tr>
-        <tr class="check__wish">
-            <td colspan="4">Дякуємо за покупку!</td>
-        </tr>
-        <tr class="check__wish">
-            <td colspan="4">Гарного дня!</td>
-        </tr>
-    </table>`)
+document.write(`<span>${result}</span>`)

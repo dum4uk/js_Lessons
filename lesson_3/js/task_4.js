@@ -1,15 +1,47 @@
 "use strict"
 
+
+// Позначення
+
+// Вік користувача - userAge
+
 // Введення даних
 
-const lengthInCm = parseFloat(prompt(`Довжина у сантиметрах`, `1`))
+const userAge = parseInt(prompt(`Введіть ваш вік`,`1`))
 
 // Обчислення результатів
+// let result
+// switch (true) {
+//     case userAge < 7:
+//         result = `дитинa у садочку`
+//         break;
+//     case userAge < 18:
+//         result = `школяр`
+//         break;
+//     case userAge < 23:
+//         result = `студент`
+//         break;
+//     case userAge < 65:
+//         result = `працівник`
+//         break;
+//     default:
+//         result = `пенсіонер`
+//         break;
+// }
 
-const lengthInM = lengthInCm * Math.pow(10,-2)
-const lengthInKm = lengthInCm * Math.pow(10,-5)
+let result
+
+if (userAge < 7)
+    result = `дитинa у садочку`
+else if (userAge < 18) 
+    result = `школяр`
+else if (userAge < 23) 
+    result = `студент`
+else if (userAge < 65) 
+    result = `працівник`
+else result = `пенсіонер`
+
 
 // Виведення результатів
 
-document.write(`<p><span>Довжина у метрах: ${lengthInM}м.</span><p>
-                <p><span>Довжина у клометрах: ${lengthInKm}км.</span><p>`)
+document.write(`<span>Вітаю ви є ${result}.</span>`)
