@@ -71,4 +71,5 @@ input[type="email"],
 input[type="tel"],
 textarea {
     appearance: none;
+    justify-content: center;
 }
